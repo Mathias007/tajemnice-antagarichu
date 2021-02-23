@@ -1,0 +1,221 @@
+:root {
+    --primary-text-color: #f6b620;
+    --secondary-text-color: #fff;
+    --primary-background-color: #383838;
+    --border-radius: 10px;
+}
+
+.footer-table__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        "Ranks Allies Wortal Social"
+        "Users Users Youtube Youtube";
+
+    background-color: var(--primary-background-color);
+}
+
+/* Universal Elements */
+
+.footer-table__title,
+.footer-table__link {
+    font-weight: bold;
+    color: var(--primary-text-color);
+}
+
+.footer-table__title {
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+}
+
+.footer-table__subtitle {
+    color: var(--secondary-text-color);
+    text-align: center;
+}
+
+.footer-table__image {
+    border: 0;
+    border-radius: var(--border-radius);
+    box-shadow:  0 0 10px 5px rgba(0,0,0,0.75)
+}
+
+.footer-table__image:hover {
+    filter: brightness(80%);
+}
+
+/* Ranks Section */
+
+.footer-table__prestige {
+    grid-area: Ranks;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.prestige__forum-ranks {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 5px 5px;
+}
+
+.forum-ranks__group-container {
+    text-align: center;
+    border-radius: var(--border-radius);
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.75);
+}
+
+.forum-ranks__group-name {
+    padding: 5px;
+    text-decoration: underline;
+    color: var(--primary-text-color);
+}
+
+.forum-ranks__list {
+    margin: 0;
+    padding: 5px;
+    list-style: none;
+}
+
+.forum-ranks__item {
+    font-weight: bold;
+}
+
+/* Allies Section */
+
+.footer-table__allies {
+    grid-area: Allies;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.allies__button-list {
+    display: grid;
+    /* grid-template-columns: 1fr 1fr; */
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.allies__single-button {
+    padding: 2px;
+    /* border: 1px solid black; */
+}
+
+.allies__single-button img {
+    width: 150px;
+    height: 75px;
+}
+
+/* eGildia Wortal Section */
+
+.footer-table__wortal {
+    grid-area: Wortal;
+    position: relative;
+}
+
+.wortal__banner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* border: 1px solid black; */
+    border-radius: var(--border-radius);
+}
+
+.wortal__banner img {
+    box-shadow: none;
+    border-radius: 100%;
+    /* width: 200px;
+    height: 200px; */
+}
+
+/* Social Section */
+
+.footer-table__social {
+    grid-area: Social;
+    position: relative;
+}
+
+.social__element {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* border: 1px solid black; */
+    border-radius: var(--border-radius);
+}
+
+.social__element img {
+    box-shadow: none;
+    max-width: 100%;
+    /* width: 150px; */
+    /* height: 150px; */
+}
+
+/* Quotes Section */
+
+.footer-table__users-quotes {
+    grid-area: Users;
+}
+
+.users-quotes__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.users-quote__avatar {
+    margin: 5px;
+    width: 100px;
+    height: 100px;
+}
+
+.users-quote__link {
+}
+
+.users-quote__text {
+    max-width: 50%;
+    text-align: center;
+    font-style: italic;
+    color: var(--secondary-text-color);
+}
+
+/* Youtube Section */
+
+.footer-table__youtube {
+    grid-area: Youtube;
+}
+
+.youtube__canals-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.youtube__single-canal {
+}
+
+.canal__author {
+    font-weight: bold;
+    color: var(--primary-text-color);
+}
+
+.canal__name {
+    font-weight: bold;
+    font-style: italic;
+    color: var(--secondary-text-color);
+}
+
+.canal__link {
+}
+
+.canal__link img {
+    /* width: 100px;
+    height: 100px; */
+}
