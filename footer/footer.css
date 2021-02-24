@@ -1,34 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
 :root {
     --primary-text-color: #f6b620;
-    --secondary-text-color: #fff;
+    --secondary-text-color: #d4d4d4;
     --primary-background-color: #383838;
     --border-radius: 10px;
 }
 
 .footer-table__container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 0px 0px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     grid-template-areas:
-        "Ranks Allies Wortal Social"
-        "Users Users Youtube Youtube";
+        "Ranks Wortal Users User"
+        "Allies Social Youtube Youtube";
 
     background-color: var(--primary-background-color);
+    font-family: "Poppins", sans-serif;
 }
 
 /* Universal Elements */
 
 .footer-table__title,
 .footer-table__link {
+    margin-bottom: 0;
     font-weight: bold;
     color: var(--primary-text-color);
+    letter-spacing: 2px;
+}
+
+.footer-table__link:hover {
+    filter: brightness(80%);
 }
 
 .footer-table__title {
     font-weight: bold;
-    font-style: italic;
     text-align: center;
+    font-weight: 600;
 }
 
 .footer-table__subtitle {
@@ -39,7 +47,7 @@
 .footer-table__image {
     border: 0;
     border-radius: var(--border-radius);
-    box-shadow:  0 0 10px 5px rgba(0,0,0,0.75)
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.75);
 }
 
 .footer-table__image:hover {
@@ -58,20 +66,26 @@
 
 .prestige__forum-ranks {
     display: grid;
-    grid-template-columns: 2fr 2fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    justify-content: center;
     gap: 5px 5px;
 }
 
 .forum-ranks__group-container {
+    grid-column: span 2;
     text-align: center;
     border-radius: var(--border-radius);
     box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.75);
 }
 
+.forum-ranks__group-container:nth-last-child(1):nth-child(odd) {
+    grid-column: 2 / span 2;
+}
+
 .forum-ranks__group-name {
+    font-weight: 600;
     padding: 5px;
-    text-decoration: underline;
     color: var(--primary-text-color);
 }
 
@@ -96,7 +110,6 @@
 
 .allies__button-list {
     display: grid;
-    /* grid-template-columns: 1fr 1fr; */
     margin: 0;
     padding: 0;
     list-style: none;
@@ -104,7 +117,6 @@
 
 .allies__single-button {
     padding: 2px;
-    /* border: 1px solid black; */
 }
 
 .allies__single-button img {
@@ -124,15 +136,13 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    /* border: 1px solid black; */
     border-radius: var(--border-radius);
 }
 
 .wortal__banner img {
     box-shadow: none;
     border-radius: 100%;
-    /* width: 200px;
-    height: 200px; */
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.75);
 }
 
 /* Social Section */
@@ -147,15 +157,12 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    /* border: 1px solid black; */
     border-radius: var(--border-radius);
 }
 
 .social__element img {
     box-shadow: none;
     max-width: 100%;
-    /* width: 150px; */
-    /* height: 150px; */
 }
 
 /* Quotes Section */
@@ -168,6 +175,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 50%;
 }
 
 .users-quote__avatar {
@@ -194,11 +202,15 @@
 
 .youtube__canals-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 
 .youtube__single-canal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .canal__author {
@@ -216,6 +228,4 @@
 }
 
 .canal__link img {
-    /* width: 100px;
-    height: 100px; */
 }
