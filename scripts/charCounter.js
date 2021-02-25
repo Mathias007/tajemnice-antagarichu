@@ -4,7 +4,7 @@ let messageMaxLength = document.formulaire.req_message.getAttribute(
 function charCounter(number) {
     let charLeftSpan = document.getElementById("char-left");
     if (!charLeftSpan) {
-        charLeftSpan = createElement("span");
+        charLeftSpan = document.createElement("span");
         charLeftSpan.id = "char-left";
         charLeftSpan.textContent = `Pozostało ${number} znaków.`;
         document.formulaire.appendChild(charLeftSpan);
