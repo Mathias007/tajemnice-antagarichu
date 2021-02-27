@@ -110,6 +110,7 @@
 
 .allies__button-list {
     display: grid;
+    grid-template-columns: repeat(2, 1fr);
     margin: 0;
     padding: 0;
     list-style: none;
@@ -120,8 +121,8 @@
 }
 
 .allies__single-button img {
-    width: 150px;
-    height: 75px;
+    width: 100px;
+    height: 50px;
 }
 
 /* eGildia Wortal Section */

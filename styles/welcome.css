@@ -7,7 +7,7 @@
     --border-radius: 5px
 }
 
-body {
+.welcome__wrapper {
     background-color: var(--primary-background-color);
     font-family: "Shrikhand", cursive;
     text-align: center;
