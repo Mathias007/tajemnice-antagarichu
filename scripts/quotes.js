@@ -1,4 +1,4 @@
-const quotesContainer = document.querySelector("#quotes-container");
+﻿const quotesContainer = document.querySelector("#quotes-container");
 
 const users = [
     {

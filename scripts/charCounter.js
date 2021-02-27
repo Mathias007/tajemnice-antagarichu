@@ -1,4 +1,4 @@
-let messageMaxLength = document.formulaire.req_message.getAttribute(
+﻿let messageMaxLength = document.formulaire.req_message.getAttribute(
     "maxlength"
 );
 function charCounter(number) {
@@ -23,4 +23,7 @@ function showResultOfSubstraction() {
     );
 }
 
-document.formulaire.req_message.onkeyup = showResultOfSubstraction();
+document.formulaire.req_message.setAttribute(
+    "onkeyup",
+    "showResultOfSubstraction()"
+);

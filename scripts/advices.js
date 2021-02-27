@@ -1,4 +1,4 @@
-const advicesContainer = document.querySelector("#advices-container");
+﻿const advicesContainer = document.querySelector("#advices-container");
 
 const advices = [
     'Pikinierzy są odporni na szarżę czempionów.',

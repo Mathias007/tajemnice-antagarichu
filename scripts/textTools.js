@@ -1,4 +1,4 @@
-var texttools = {
+﻿var texttools = {
     "[b]": { pattern: "[b]%s[/b]", accesskey: "b" },
     "[u]": { pattern: "[u]%s[/u]", accesskey: "u" },
     "[i]": { pattern: "[i]%s[/i]", accesskey: "i" },
