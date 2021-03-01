@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+:root {
+    --primary-text-color: #f6b620;
+    --secondary-text-color: #d4d4d4;
+    --primary-background-color: #383838;
+    --main-font-family: "Lato", sans-serif;
+}
+
+.rules__container {
+    font-family: var(--main-font-family);
+}
+
+.rules__title {
+    text-align: center;
+    font-weight: bold;
+}
+
+.rules__section {
+}
+
+.rules__chapter {
+    color: var(--primary-text-color);
+    font-weight: bold;
+    font-style: italic;
+}
+
+.rules__paragraph {
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+strong {
+    font-weight: bold;
+}
+
+strong.admin,
+strong.warn {
+    color: red;
+}
+
+strong.mod,
+strong.award {
+    color: green;
+}
+
+strong.authority,
+strong.degradation {
+    color: orange;
+}
+
+strong.ban {
+    color: pink;
+}
+
+strong.link a {
+    color: var(--primary-text-color);
+    text-decoration: none;
+}
+
+strong.link a:hover {
+    filter: brightness(80%);
+}
+
+.rules__novelizations-info {
+    font-style: italic;
+}
