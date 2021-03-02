@@ -20,8 +20,6 @@
 }
 
 #brdtitle img {
-    width: 80%;
-    height: 80%;
     align-self: center;
     border-radius: 5px;
     box-shadow: var(--shadow);
@@ -71,10 +69,17 @@
     padding: 0;
 }
 
+.intd {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /* ustawienia */
 .pun .icon {
-    width: 32px; /* szerokość ikon */
-    height: 32px; /* wysokosc ikon */
+    padding-right: 5px;
+    min-width: 32px; /* szerokość ikon */
+    min-height: 32px; /* wysokosc ikon */
     border: none;
 }
 
@@ -262,8 +267,10 @@ div.cb_all:last-child object {
     width: 50%;
     float: left;
 }
+
 .blocktable h2 {
-    height: 16px;
+    height: 2rem;
+    border-radius: var(--radius);
 }
 
 div#punadmin.pun td div.T {
@@ -306,42 +313,42 @@ div.tclcon h3 a:hover {
 }
 #brdmenu li#navprofile a:before {
     content: "";
-    font-size: 11px;
+    font-size: 1.2rem;
 }
 #brdmenu li#navpm a {
     font-size: 0;
 }
 #brdmenu li#navpm a:before {
     content: "Poczta";
-    font-size: 11px;
+    font-size: 1.2rem;
 }
 #brdmenu li#navindex a {
     font-size: 0;
 }
 #brdmenu li#navindex a:before {
     content: "Miasto";
-    font-size: 11px;
+    font-size: 1.2rem;
 }
 #brdmenu li#navforums a {
     font-size: 0;
 }
 #brdmenu li#navforums a:before {
     content: "Miasto";
-    font-size: 11px;
+    font-size: 1.2rem;
 }
 #brdmenu li#navuserlist a {
     font-size: 0;
 }
 #brdmenu li#navuserlist a:before {
     content: "Obywatele";
-    font-size: 11px;
+    font-size: 1.2rem;
 }
 #brdmenu li#navadmin a {
     font-size: 0;
 }
 #brdmenu li#navadmin a:before {
     content: "Władza";
-    font-size: 11px;
+    font-size: 1.2rem;
     color: red;
 }
 #brdmenu li#navrules {
@@ -349,21 +356,24 @@ div.tclcon h3 a:hover {
 }
 #brdmenu li#navrules a:before {
     content: "Prawo";
-    font-size: 11px;
+    font-size: 1.2rem;
+}
+#brdmenu li#navsearch {
+    font-size: 1.2rem;
 }
 #brdmenu li#navlogout {
     font-size: 0;
 }
 #brdmenu li#navlogout a:before {
     content: "Wymelduj";
-    font-size: 11px;
+    font-size: 1.2rem;
 }
 #brdmenu li#navlogin {
     font-size: 0;
 }
 #brdmenu li#navlogin a:before {
     content: "Zamelduj";
-    font-size: 11px;
+    font-size: 1.2rem;
 }
 #brdmenu li a[href="gallery.php"] {
     display: none;
