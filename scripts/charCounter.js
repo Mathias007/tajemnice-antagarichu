@@ -6,7 +6,7 @@ function charCounter(number) {
     if (!charLeftSpan) {
         charLeftSpan = document.createElement("span");
         charLeftSpan.id = "char-left";
-        charLeftSpan.textContent = `Pozostało ${number} znaków.`;
+        charLeftSpan.innerHTML = `Pozostało ${number} znaków.`;
         document.formulaire.appendChild(charLeftSpan);
     } else {
         charLeftSpan.textContent = `Pozostało ${number} znaków.`;
@@ -18,9 +18,7 @@ charCounter(messageMaxLength);
 function showResultOfSubstraction() {
     let substract =
         messageMaxLength - document.formulaire.req_message.value.length;
-    charCounter(
-        substract <= 0 ? '<span style="color:red;>0</span>' : substract
-    );
+    charCounter(substract);
 }
 
 document.formulaire.req_message.setAttribute(
