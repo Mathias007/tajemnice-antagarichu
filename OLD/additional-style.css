@@ -8,18 +8,8 @@
     box-shadow: var(--shadow);
 }
 
-#brdtitle {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-#brdtitle p {
-    text-align: center;
-}
-
 #brdtitle img {
+    width: 100%;
     align-self: center;
     border-radius: 5px;
     box-shadow: var(--shadow);
@@ -31,6 +21,20 @@
 
 #brdtitle h1 {
     display: none;
+}
+
+#announce > .box {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: var(--radius);
+    border-bottom-right-radius: var(--radius);
+}
+
+#announce > h2,
+.blocktable > h2 {
+    cursor: pointer;
+    border-top-left-radius: var(--radius);
+    border-top-right-radius: var(--radius);
 }
 
 #proavatar {
@@ -71,7 +75,6 @@
 
 .intd {
     display: flex;
-    justify-content: center;
     align-items: center;
 }
 
@@ -158,6 +161,7 @@ div#brdtitle .img alt {
 
 #brdmenu {
     text-align: center;
+    font-size: 1.4rem;
 }
 
 /* Chatbox */
@@ -280,6 +284,7 @@ div#punadmin.pun td div.T {
 p span input[value="Preview"] {
     display: none;
 }
+
 div#punpost.pun
     div.blockform
     div.box
@@ -306,77 +311,6 @@ div.tclcon h3 a {
 
 div.tclcon h3 a:hover {
     text-decoration: none;
-}
-
-#brdmenu li#navprofile a {
-    font-size: 0;
-}
-#brdmenu li#navprofile a:before {
-    content: "";
-    font-size: 1.2rem;
-}
-#brdmenu li#navpm a {
-    font-size: 0;
-}
-#brdmenu li#navpm a:before {
-    content: "Poczta";
-    font-size: 1.2rem;
-}
-#brdmenu li#navindex a {
-    font-size: 0;
-}
-#brdmenu li#navindex a:before {
-    content: "Miasto";
-    font-size: 1.2rem;
-}
-#brdmenu li#navforums a {
-    font-size: 0;
-}
-#brdmenu li#navforums a:before {
-    content: "Miasto";
-    font-size: 1.2rem;
-}
-#brdmenu li#navuserlist a {
-    font-size: 0;
-}
-#brdmenu li#navuserlist a:before {
-    content: "Obywatele";
-    font-size: 1.2rem;
-}
-#brdmenu li#navadmin a {
-    font-size: 0;
-}
-#brdmenu li#navadmin a:before {
-    content: "Władza";
-    font-size: 1.2rem;
-    color: red;
-}
-#brdmenu li#navrules {
-    font-size: 0;
-}
-#brdmenu li#navrules a:before {
-    content: "Prawo";
-    font-size: 1.2rem;
-}
-#brdmenu li#navsearch {
-    font-size: 1.2rem;
-}
-#brdmenu li#navlogout {
-    font-size: 0;
-}
-#brdmenu li#navlogout a:before {
-    content: "Wymelduj";
-    font-size: 1.2rem;
-}
-#brdmenu li#navlogin {
-    font-size: 0;
-}
-#brdmenu li#navlogin a:before {
-    content: "Zamelduj";
-    font-size: 1.2rem;
-}
-#brdmenu li a[href="gallery.php"] {
-    display: none;
 }
 
 div#left div#stylowe25 {
