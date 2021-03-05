@@ -1,0 +1,90 @@
+/* Chatbox */
+.cb_right {
+    min-width: 90%;
+    width: 90%;
+}
+
+.cb_left {
+    max-width: 10%;
+    min-width: 10%;
+    width: 10%;
+}
+
+div#punforums.pun div.block div.box div#chatbox {
+    height: 310px !important;
+}
+
+.cb_right img {
+    max-height: 300px;
+    max-width: 700px;
+}
+
+.cb_left A {
+    text-decoration: none;
+}
+
+.cb_lewy {
+    position: relative;
+}
+
+.cb_info {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+div.block h2 span span[style="font-size:7px;vertical-align:super;"]:after {
+    content: "- modded by Nit";
+}
+
+.cb_left span[style="color: green"] A {
+    color: green;
+}
+
+.cb_left span[style="color: red"] A {
+    color: red;
+}
+
+.cb_left span[style="color: yellow"] A {
+    color: yellow;
+}
+
+/* info w chacie */
+.cb_info ul,
+li {
+    list-style: none;
+}
+.cb_info li.podmenu {
+    position: relative;
+}
+.cb_info li.podmenu:hover > ul {
+    display: block;
+    position: absolute;
+    top: 100;
+    left: 100%;
+    margin: 0;
+}
+.cb_info ul.menu > li {
+    position: relative;
+    white-space: nowrap;
+}
+.cb_info ul.menu ul {
+    display: none;
+}
+.cb_info ul.menu > li.podmenu:hover > ul {
+    top: -40%;
+    left: 100%;
+    padding: 6px;
+    box-shadow: 0 0 10px #000;
+    border-radius: 3px;
+    font-size: 10px;
+    background: white;
+    color: black;
+}
+
+div.cb_all object {
+    display: none;
+}
+div.cb_all:last-child object {
+    display: inline;
+}
