@@ -1,3 +1,5 @@
+/* Import Scrollbar styles */
+@import url("./scrollbar.css");
 /* Import ChatBox custom styles */
 @import url("./chatbox.css");
 /* Import icons custom styles */
