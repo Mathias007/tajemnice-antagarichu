@@ -30,6 +30,7 @@ const faviconData = {
 };
 
 Object.values(faviconData).forEach((linkData) => {
+    const proxyUrl = "https://secret-ocean-49799.herokuapp.com/"; // temp solution of CORS problem
     const path = "https://egildia.pl/forum/favicon";
     let order = 0;
 
@@ -37,7 +38,7 @@ Object.values(faviconData).forEach((linkData) => {
     linkEl.rel = linkData.rel;
     linkEl.type = linkData.type;
     linkEl.sizes = linkData.sizes;
-    linkEl.href = `${path}${linkData.href}`;
+    linkEl.href = `${proxyUrl}${path}${linkData.href}`;
 
     document.getElementsByTagName("head")[order].appendChild(linkEl);
 
