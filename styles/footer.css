@@ -105,6 +105,7 @@
     grid-area: Allies;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
@@ -129,14 +130,13 @@
 
 .footer-table__wortal {
     grid-area: Wortal;
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .wortal__banner {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     border-radius: var(--border-radius);
 }
 
@@ -150,26 +150,29 @@
 
 .footer-table__social {
     grid-area: Social;
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .social__element {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     border-radius: var(--border-radius);
 }
 
 .social__element img {
     box-shadow: none;
-    max-width: 100%;
+    max-width: 300px;
 }
 
 /* Quotes Section */
 
 .footer-table__users-quotes {
     grid-area: Users;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .users-quotes__container {
@@ -199,6 +202,10 @@
 
 .footer-table__youtube {
     grid-area: Youtube;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .youtube__canals-container {
@@ -229,4 +236,25 @@
 }
 
 .canal__link img {
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+    .footer-table__container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 7;
+        grid-template-areas:
+            "Ranks"
+            "Ranks"
+            "Users"
+            "Allies"
+            "Wortal"
+            "Social"
+            "Youtube";
+    }
+
+    .allies__button-list {
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
