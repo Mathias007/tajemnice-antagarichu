@@ -43,7 +43,9 @@
     font-size: 1.4rem;
 }
 
-#announce > .box {
+#announce > .box,
+.blockform > .box,
+#adminconsole .box {
     border-top-left-radius: 0;
     border-top-right-radius: 0;
     border-bottom-left-radius: var(--radius);
@@ -76,6 +78,12 @@
 
 .blocktable thead {
     display: none;
+}
+
+.blockform h2,
+#adminconsole h2 {
+    border-top-left-radius: var(--radius);
+    border-top-right-radius: var(--radius);
 }
 
 #proavatar {
@@ -152,7 +160,8 @@ p span input[value="Preview"] {
     display: none;
 }
 
-#punwrap input[type="submit"] {
+#punwrap input[type="submit"],
+#punwrap input[type="password"] {
     margin: 0 5px;
     padding: 10px;
     border-radius: var(--radius);
@@ -214,6 +223,9 @@ div#left div#stylowe25 {
 
 /* Media Queries */
 @media (max-width: 1024px) {
+    .conr li a {
+        font-size: 1rem;
+    }
 
     #punwrap .advertisement {
         overflow: hidden;
@@ -222,5 +234,13 @@ div#left div#stylowe25 {
     .blocktable .inbox .tc2,
     .blocktable .inbox .tc3 {
         display: none;
+    }
+
+    .blocktable .inbox .tc1 {
+        width: 90%;
+    }
+
+    .blocktable .inbox .tcr {
+        width: 10%;
     }
 }
