@@ -4,11 +4,17 @@
 @import url("./icons.css");
 
 :root {
+    --primary-text-color: #f6b620;
+    --input-text-color: #d4d4d4;
+    --input-background-color: #2a2a2a;
+    --primary-background-color: #383838;
     --radius: 5px;
     --shadow: 0 0 5px 15px rgba(0, 0, 0, 0.5);
 }
 
-.box {
+.block,
+.blocktable,
+.blockpost {
     border-radius: 0 0 var(--radius) var(--radius);
     box-shadow: var(--shadow);
 }
@@ -28,6 +34,15 @@
     display: none;
 }
 
+#brdmenu {
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+.conr li a {
+    font-size: 1.4rem;
+}
+
 #announce > .box {
     border-top-left-radius: 0;
     border-top-right-radius: 0;
@@ -37,14 +52,30 @@
 
 #announce > h2,
 .blocktable > h2 {
-    cursor: pointer;
+    height: 2rem;
     border-top-left-radius: var(--radius);
     border-top-right-radius: var(--radius);
+    text-align: center;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
 #announce > h2:hover,
 .blocktable > h2:hover {
     filter: brightness(80%);
+}
+
+#punwrap .advertisement {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.blocktable thead {
+    display: none;
 }
 
 #proavatar {
@@ -101,11 +132,6 @@
     float: left;
 }
 
-#brdmenu {
-    text-align: center;
-    font-size: 1.4rem;
-}
-
 .h2sT1,
 .h2sT2 {
     width: 9%;
@@ -118,19 +144,45 @@
     float: right;
 }
 
-#announce h2,
-.blocktable h2 {
-    height: 2rem;
-    border-radius: var(--radius);
-    text-align: center;
-}
-
 div#punadmin.pun td div.T {
     display: none;
 }
 
 p span input[value="Preview"] {
     display: none;
+}
+
+#punwrap input[type="submit"] {
+    margin: 0 5px;
+    padding: 10px;
+    border-radius: var(--radius);
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#punwrap input[type="submit"]:hover {
+    background-color: var(--input-text-color);
+    color: var(--input-background-color);
+}
+
+#punwrap input[type="text"] {
+    margin: 0 5px;
+    padding: 10px;
+    border-radius: var(--radius);
+    font-size: 1.2rem;
+}
+
+#punwrap select {
+    padding: 10px;
+    border-radius: var(--radius);
+    cursor: pointer;
+}
+
+#punwrap textarea {
+    width: 99%;
 }
 
 div#punpost.pun
@@ -158,4 +210,17 @@ div#left div#stylowe25 {
 
 .hidden {
     display: none;
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+
+    #punwrap .advertisement {
+        overflow: hidden;
+    }
+
+    .blocktable .inbox .tc2,
+    .blocktable .inbox .tc3 {
+        display: none;
+    }
 }
