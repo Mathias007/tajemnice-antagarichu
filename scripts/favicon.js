@@ -5,6 +5,7 @@
 <link rel="manifest" href="/site.webmanifest"></link> */
 }
 
+// Initial favicon links' data
 const faviconData = {
     appleTouch: {
         rel: "apple-touch-icon",
@@ -29,10 +30,10 @@ const faviconData = {
     },
 };
 
+// Build link elements using faviconData
 Object.values(faviconData).forEach((linkData) => {
     const proxyUrl = "https://secret-ocean-49799.herokuapp.com/"; // temp solution of CORS problem
     const path = "https://egildia.pl/forum/favicon";
-    let order = 0;
 
     const linkEl = document.createElement("link");
     linkEl.rel = linkData.rel;
@@ -40,7 +41,5 @@ Object.values(faviconData).forEach((linkData) => {
     linkEl.sizes = linkData.sizes;
     linkEl.href = `${proxyUrl}${path}${linkData.href}`;
 
-    document.getElementsByTagName("head")[order].appendChild(linkEl);
-
-    order++;
+    document.querySelector("head").appendChild(linkEl);
 });

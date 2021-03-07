@@ -1,3 +1,10 @@
+// // Add Initial scale
+// const viewportMeta = document.createElement("meta");
+// viewportMeta.name = "viewport";
+// viewportMeta.content = "width=device-width, initial-scale=1";
+
+// document.querySelector("head").appendChild(viewportMeta);
+
 // Change default Mercury stylesheet on the own one
 const styleSheet = document.querySelector('link[href="style/Mercury.css"]');
 
@@ -12,7 +19,7 @@ styleSheet.setAttribute(
 const advEl = document.querySelector("#announce + div");
 console.log(advEl);
 
-advEl.removeAttribute('style');
+advEl.removeAttribute("style");
 advEl.classList.add("block", "advertisement");
 
 // Remove adv class from admin panel

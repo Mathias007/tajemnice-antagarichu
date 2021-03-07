@@ -1,7 +1,7 @@
 const titleEl = document.getElementById("brdtitle");
 const logoData = {
     aHref: "forums.php",
-    imgSrc: "https://egildia.pl/forum/ta-logo2.png",
+    imgSrc: "https://egildia.pl/forum/img/forum-logo.png",
     alt:
         "Tajemnice Antagarichu | Heroes of Might and Magic 1, 2, 3, 4, 5, 6, 7 Forum",
 };
