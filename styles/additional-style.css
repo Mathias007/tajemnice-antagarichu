@@ -47,6 +47,7 @@
     padding: 10px;
     background: var(--primary-background-color);
     box-shadow: 0 0 5px 0 rgb(0 0 0 / 80%);
+    transition: 0.3s;
 }
 
 #navindex a:hover {

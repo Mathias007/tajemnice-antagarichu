@@ -1,56 +1,57 @@
 /* ustawienia */
 .pun .icon {
-    padding-right: 5px;
     min-width: 32px; /* szerokość ikon */
     min-height: 32px; /* wysokosc ikon */
+    margin-top: 0.5rem;
+    margin-left: 0.5rem;
     border: none;
 }
 
 /* brak nowych postów */
 .pun .icon {
-    background: url("http://egildia.pl/forum/ikony/posts.png") no-repeat !important;
+    background: url("http://egildia.pl/forum/ikony/posts.png") no-repeat;
 }
 
 /* nowy post */
 .inew .icon {
-    background: url("http://egildia.pl/forum/ikony/palac.png") no-repeat !important;
+    background: url("http://egildia.pl/forum/ikony/palac.png") no-repeat;
 }
 
 /* Przyklejone bez nowych postów */
 .isticky .icon {
-    background: url("http://egildia.pl/forum/ikony/newstickys.png") no-repeat !important;
+    background: url("http://egildia.pl/forum/ikony/newstickys.png") no-repeat;
 }
 
 /* Przyklejone z nowymi postami */
 .isticky .icon-new {
-    background: url("http://egildia.pl/forum/ikony/newstickys.png") no-repeat !important;
+    background: url("http://egildia.pl/forum/ikony/newstickys.png") no-repeat;
 }
 
 .inew .isticky {
-    background: url("http://egildia.pl/forum/ikony/newstickys.png") no-repeat !important;
+    background: url("http://egildia.pl/forum/ikony/newstickys.png") no-repeat;
 }
 
 /* Zamkniety, brak nowych postów */
 .iclosed .icon {
-    background: url("http://egildia.pl/forum/ikony/posts.png") no-repeat !important;
+    background: url("http://egildia.pl/forum/ikony/posts.png") no-repeat;
 }
 
 /* Zamkniety z nowym postem */
 .iclosed .icon-new {
-    background: url("http://egildia.pl/forum/ikony/newposts.png") no-repeat !important;
+    background: url("http://egildia.pl/forum/ikony/newposts.png") no-repeat;
 }
 
 /* Przeniesiony */
 .imoved .icon {
-    background: url("http://egildia.pl/forum/ikony/newposts.png") no-repeat !important;
+    background: url("http://egildia.pl/forum/ikony/newposts.png") no-repeat;
 }
 
 /* ankieta bez nowych postów  */
 .ipoll .icon {
-    background: url("http://egildia.pl/forum/ikony/posts.png") no-repeat !important;
+    background: url("http://egildia.pl/forum/ikony/posts.png") no-repeat;
 }
 
 /* ankieta z nowych postów  */
 .ipoll .icon-new {
-    background: url("http://egildia.pl/forum/ikony/newposts.png") no-repeat !important;
+    background: url("http://egildia.pl/forum/ikony/newposts.png") no-repeat;
 }
