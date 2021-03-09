@@ -1,0 +1,127 @@
+{
+    "2013": [
+        {
+            "date": "01.01.13r.",
+            "id": "2786",
+            "title": "Szczęśliwego Nowego 2013!"
+        },
+        {
+            "date": "08.01.13r.",
+            "id": "2790",
+            "title": "Amnestia 2013 oraz zmiany w Regulaminie"
+        },
+        {
+            "date": "22.01.13r.",
+            "id": "2424",
+            "title": "Współpraca ze StrongholdNet"
+        },
+        {
+            "date": "10.02.13r.",
+            "id": "2806",
+            "title": "Nowy styl - nowa epoka",
+            "addition": "(Mercury)"
+        },
+        {
+            "date": "25.01.13r.",
+            "id": "2796",
+            "title": "Szukamy nowych userów - ed. 3"
+        },
+        {
+            "date": "15.02.13r.",
+            "id": "2808",
+            "title": "Amnestia 2013 part II"
+        },
+        {
+            "date": "17.02.13r.",
+            "id": "pid=37499",
+            "title": "Modernizacja forum oraz Pałacu"
+        },
+        {
+            "date": "18.02.13r.",
+            "id": "2812",
+            "title": "Przenosiny Pałacu na Wortal - pierwsze komnaty wylądowały!"
+        },
+        {
+            "date": "22.02.13r.",
+            "id": "2815",
+            "title": "Reforma systemu awansów na forum"
+        },
+        {
+            "date": "24.02.13r.",
+            "id": "2824",
+            "title": "Zakończenie Świątecznego Turnieju Aren",
+            "addition": "(Zwycięzca: Xeno)"
+        },
+        { "date": "30.03.13r.", "id": "2832", "title": "Życzenia wielkanocne" },
+        {
+            "date": "12.04.13r.",
+            "id": "2834",
+            "title": "Forum ma już 6 lat!!!!"
+        },
+        {
+            "date": "26.06.13r.",
+            "id": "2868",
+            "title": "Wieża Magów - serwis o grze Tzar: Ciężar Korony"
+        },
+        {
+            "date": "04.09.13r.",
+            "id": "2888",
+            "title": "Postanowienia związane z nowym rokiem szkolnym"
+        },
+        {
+            "date": "22.09.13r.",
+            "id": "2892",
+            "title": "Wybory ludowego członka Królewskiej Kapituły"
+        },
+        { "date": "16.10.13r.", "id": "2909", "title": "Reforma Obozu" },
+        {
+            "date": "18.10.13r.",
+            "id": "2910",
+            "title": "Sala Idei i inne zmiany na forum"
+        },
+        {
+            "date": "24.10.13r.",
+            "id": "2917",
+            "title": "Wiele nowych skryptów i rozwiązań na forum (Chat, PW, Emotki, BB-Code)"
+        },
+        {
+            "date": "09.12.13r.",
+            "id": "2930",
+            "title": "Nagrody za popularność 2013 - nominacje"
+        },
+        {
+            "date": "22.12.13r.",
+            "id": "2937",
+            "title": "II Wybory ludowego członka Królewskiej Kapituły"
+        },
+        {
+            "date": "24.12.13r.",
+            "id": "2942",
+            "title": "Wesołych Świąt po raz siódmy!"
+        },
+        { "specialField": true, "title": "Dzieje Kronik Heroes" },
+        {
+            "date": "05.01.13r.",
+            "id": "2787",
+            "title": "Katalogi i promocja strony Kroniki Heroes"
+        },
+        {
+            "date": "05.01.13r.",
+            "id": "2788",
+            "title": "Heroes Kroniki opis kategorii na stronie",
+            "crossed": true
+        },
+        {
+            "date": "30.01.13r.",
+            "id": "2801",
+            "title": "Kwiatki z komentarzy na stronie"
+        },
+        { "date": "30.01.13r.", "id": "2802", "title": "Aktualizacja Pałac" },
+        { "date": "31.01.13r.", "id": "2803", "title": "Nabór redaktorów" },
+        {
+            "date": "27.09.13r.",
+            "id": "2898",
+            "title": "Nowy adres Kronik - www.heroes.egildia.pl"
+        }
+    ]
+}
