@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+:root {
+    --primary-text-color: #f6b620;
+    --secondary-text-color: #d4d4d4;
+    --primary-background-color: #383838;
+    --main-font-family: "Lato", sans-serif;
+}
+
+body {
+    background-color: var(--primary-background-color);
+    color: var(--secondary-text-color);
+}
+
+.throne-hall__container {
+    font-family: var(--main-font-family);
+}
+
+.throne-hall__header {
+    text-align: center;
+    font-weight: bold;
+    color: var(--primary-text-color);
+}
+
+.throne-hall__section-content {
+}
+
+.throne-hall__paragraph {
+}
+
+.throne-hall__paragraph--quote {
+    font-style: italic;
+}
+
+.throne-hall__invite {
+    font-weight: bold;
+    text-align: center;
+    color: var(--primary-text-color);
+}
+
+.throne-hall__invite .link a {
+    color: var(--secondary-text-color);
+}
+
+strong {
+    font-weight: bold;
+}
+
+strong.admin {
+    color: red;
+}
+
+strong.mod {
+    color: green;
+}
+
+strong.webmaster {
+    color: teal;
+}
+
+strong.link a {
+    color: var(--primary-text-color);
+    text-decoration: none;
+}
+
+strong.link a:hover {
+    filter: brightness(80%);
+}
+
+.throne-hall__contacts {
+    display: flex;
+    justify-content: space-around;
+}
+
+.contacts__card {
+    display: flex;
+    flex-direction: column;
+}
+
+.contacts__card span > img {
+    width: 1rem;
+}
+
+.graphics__graphic {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.graphics__graphic > textarea {
+    margin-top: 10px;
+    width: 500px;
+    height: 90px;
+}
