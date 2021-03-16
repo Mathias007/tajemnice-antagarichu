@@ -26,7 +26,7 @@
     --primary-background-color: #383838;
     --radius: 10px;
     --shadow: 0 0 5px 15px rgba(0, 0, 0, 0.5);
-	--line-height: 1.6;
+    --line-height: 1.6;
 }
 
 /****************************************************************/
@@ -128,6 +128,9 @@ div.postlinksb li,
 /* 3.1 Remove underlining for main menu, post header links, post links and vertical menus */
 
 .conl li a,
+.conl dd a,
+.conr li a,
+.conr a,
 .conv li a,
 #brdmenu a:link,
 #brdmenu a:visited,
@@ -140,7 +143,7 @@ div.postlinksb li,
 .postfootright a:link,
 .postfootright a:visited,
 .blockmenu a:link,
-.blockmenu a:visited {
+.blockmenu a:visited .intd a {
     text-decoration: none;
 }
 
@@ -216,21 +219,20 @@ DIV.block,
 DIV.blockform,
 DIV.block2col,
 #postreview {
-    margin-bottom: 12px;
-	border-bottom-left-radius: var(--radius);
-	border-bottom-right-radius: var(--radius);
+    margin-bottom: 24px;
+
+    border-radius: var(--radius);
 }
 #punindex DIV.blocktable,
 DIV.blockpost {
-    margin-bottom: 6px;
-	border-bottom-left-radius: calc(var(--radius)/2);
-	border-bottom-right-radius: calc(var(--radius)/2);
+    margin-bottom: 12px;
+    border-radius: calc(var(--radius) / 2);
 }
 DIV.block2col DIV.blockform,
 DIV.block2col DIV.block {
     margin-bottom: 0px;
-	border-bottom-left-radius: calc(var(--radius)/2);
-	border-bottom-right-radius: calc(var(--radius)/2);
+
+    border-radius: calc(var(--radius) / 2);
 }
 
 /* 5.3 Remove space above breadcrumbs, postlinks and pagelinks with a negative top margin */
@@ -291,7 +293,7 @@ DIV.postlinksb {
 #brdfooter DL A,
 DIV.blockmenu LI,
 DIV.rbox INPUT {
-    line-height: var(--line-height);
+    line-height: 2rem;
 }
 #viewprofile DT,
 #viewprofile DD {

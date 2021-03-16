@@ -16,23 +16,31 @@ body {
     font-family: var(--main-font-family);
 }
 
-.throne-hall__header {
+.throne-hall__container .throne-hall__header {
+    font-size: 2rem;
     text-align: center;
     font-weight: bold;
     color: var(--primary-text-color);
 }
 
-.throne-hall__section-content {
+.throne-hall__container .throne-hall__subheader {
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: bold;
+    color: var(--primary-text-color);
 }
 
-.throne-hall__paragraph {
+.throne-hall__container .throne-hall__section-content {
 }
 
-.throne-hall__paragraph--quote {
+.throne-hall__container .throne-hall__paragraph {
+}
+
+.throne-hall__container .throne-hall__paragraph--quote {
     font-style: italic;
 }
 
-.throne-hall__invite {
+.throne-hall__container .throne-hall__invite {
     font-weight: bold;
     text-align: center;
     color: var(--primary-text-color);
@@ -90,6 +98,5 @@ strong.link a:hover {
 
 .graphics__graphic > textarea {
     margin-top: 10px;
-    width: 500px;
     height: 90px;
 }
