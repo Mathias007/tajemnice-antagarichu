@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+:root {
+    --primary-text-color: #f6b620;
+    --secondary-text-color: #d4d4d4;
+    --primary-background-color: #383838;
+    --secondary-background-color: #515151;
+    --main-font-family: "Lato", sans-serif;
+    --radius: 10px;
+    --shadow: 0 0 10px 1px rgba(0, 0, 0, 0.75);
+}
+
+body {
+    background-color: var(--primary-background-color);
+    color: var(--secondary-text-color);
+}
+
+.prestige__container {
+    font-family: var(--main-font-family);
+}
+
+.prestige__container .prestige__header {
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bold;
+    color: var(--primary-text-color);
+}
+
+.prestige__container .prestige__subheader {
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: bold;
+    color: var(--primary-text-color);
+}
+
+.prestige__container .prestige__section-content {
+}
+
+.prestige__container .prestige__paragraph {
+    margin: 10px;
+}
+
+.prestige__container .prestige__paragraph--quote {
+    font-style: italic;
+}
+
+.special {
+    font-weight: bold;
+    text-align: center;
+    color: var(--primary-text-color);
+}
+
+.special .link a {
+    color: var(--secondary-text-color);
+}
+
+.throne-hall__invite .link a {
+    color: var(--secondary-text-color);
+}
+
+strong {
+    font-weight: bold;
+}
+
+strong.admin {
+    color: red;
+}
+
+strong.mod {
+    color: green;
+}
+
+strong.webmaster {
+    color: teal;
+}
+
+strong.authority {
+    color: orange;
+}
+
+strong.link a {
+    color: var(--primary-text-color);
+    text-decoration: none;
+}
+
+strong.link a:hover {
+    filter: brightness(80%);
+}
+
+strong.important {
+    text-transform: uppercase;
+}
+
+.prestige__ranks {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px 5px;
+    padding: 0 10px;
+}
+
+.rank {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    transition: background-color 0.3s linear;
+}
+
+.rank:hover {
+    background-color: var(--secondary-background-color);
+}
+
+.rank__name {
+    text-align: center;
+    color: var(--primary-text-color);
+}
+
+.rank__description {
+    margin: 10px;
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+    .prestige__ranks {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .rank {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 640px) {
+    .prestige__ranks {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .rank {
+        display: flex;
+        flex-direction: column;
+    }
+}
