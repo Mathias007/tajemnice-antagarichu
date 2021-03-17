@@ -2,7 +2,7 @@ const tableBody = document.getElementById("tableBody");
 
 const bestUsers = [
     {
-        position: "1.",
+        position: "1",
         positionChange: "+3",
         username: "Sauron",
         userID: "369",
@@ -13,7 +13,7 @@ const bestUsers = [
             "Jak chcesz coś zrobić, to po prostu to zrób... Tylko ty masz władzę, by spełnić swoje pragnienia.",
     },
     {
-        position: "2.",
+        position: "2",
         positionChange: "+4",
         username: "Xeno",
         userID: "420",
@@ -23,7 +23,7 @@ const bestUsers = [
         quote: "Głowa bez pamięci to twierdza bez garnizonu.",
     },
     {
-        position: "3.",
+        position: "3",
         positionChange: "=",
         username: "Asiņains",
         userID: "118",
@@ -31,10 +31,10 @@ const bestUsers = [
         points: "36",
         pointsChange: "+4",
         quote:
-            "Fight for those you have lost and for those you don't want to lose",
+            "Fight for those you have lost and for those you don't want to lose.",
     },
     {
-        position: "4.",
+        position: "4",
         positionChange: "-3",
         username: "GiBoN",
         userID: "441",
@@ -42,10 +42,10 @@ const bestUsers = [
         points: "33",
         pointsChange: "=",
         quote:
-            "Żyjesz tu, teraz. Hic et nunc. Masz jedno życie, jeden punkt. Co zdążysz zrobić, to zostanie, choćby ktoś inne mógł mieć zdanie",
+            "Żyjesz tu, teraz. Hic et nunc. Masz jedno życie, jeden punkt. Co zdążysz zrobić, to zostanie, choćby ktoś inne mógł mieć zdanie.",
     },
     {
-        position: "5.",
+        position: "5",
         positionChange: "-2",
         username: "Eleazar",
         userID: "290",
@@ -55,17 +55,17 @@ const bestUsers = [
         quote: "Nie szukaj szczęścia, samo Cię odszuka.",
     },
     {
-        position: "6.",
+        position: "6",
         positionChange: "=",
         username: "Cohen",
         userID: "123",
         rank: "Hetman",
         points: "25",
         pointsChange: "+3",
-        quote: "Nihil Novi Sub a Sole",
+        quote: "Nihil Novi Sub a Sole.",
     },
     {
-        position: "7.",
+        position: "7",
         positionChange: "+4",
         username: "Deferdus",
         userID: "895",
@@ -75,7 +75,7 @@ const bestUsers = [
         quote: "Odwaga to nie brak strachu, a panowanie nad strachem.",
     },
     {
-        position: "8.",
+        position: "8",
         positionChange: "debiut",
         username: "Markham",
         userID: "1271",
@@ -85,7 +85,7 @@ const bestUsers = [
         quote: "Człowiekiem jestem i nic, co ludzkie, nie jest mi obce.",
     },
     {
-        position: "9.",
+        position: "9",
         positionChange: "=",
         username: "Olórin",
         userID: "502",
@@ -96,7 +96,7 @@ const bestUsers = [
             "Nie jest ważne jak mocno bijesz, liczy się ile jesteś w stanie znieść i nadal podążać do celu.",
     },
     {
-        position: "10.",
+        position: "10",
         positionChange: "-2",
         username: "Lowcakur",
         userID: "621",

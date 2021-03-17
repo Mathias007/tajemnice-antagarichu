@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+:root {
+    --primary-text-color: #f6b620;
+    --secondary-text-color: #d4d4d4;
+    --primary-background-color: #383838;
+    --secondary-background-color: #515151;
+    --main-font-family: "Lato", sans-serif;
+    --radius: 10px;
+    --shadow: 0 0 10px 1px rgba(0, 0, 0, 0.75);
+}
+
+body {
+    background-color: var(--primary-background-color);
+    color: var(--secondary-text-color);
+}
+
+.fame__container {
+    font-family: var(--main-font-family);
+}
+
+.fame__container .fame__header {
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bold;
+    color: var(--primary-text-color);
+}
+
+.fame__container .fame__paragraph {
+    margin: 10px;
+}
+
+.fame__container .fame__paragraph--quote {
+    font-style: italic;
+}
+
+.fame__update-info {
+    font-weight: bold;
+    text-align: center;
+    color: var(--primary-text-color);
+}
+
+.fame__update-info strong {
+    font-style: italic;
+    color: var(--secondary-text-color);
+}
+
+strong {
+    font-weight: bold;
+}
+
+strong.important {
+    text-transform: uppercase;
+}
+
+section.table {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.fame__table {
+    text-align: center;
+}
+
+.fame__table a {
+    text-decoration: none;
+    color: var(--secondary-text-color);
+    font-weight: bold;
+}
+
+.fame__table a:hover {
+    text-decoration: underline;
+    filter: brightness(80%);
+}
+
+.fame__table thead {
+    text-transform: uppercase;
+    color: var(--primary-text-color);
+}
+
+.fame__table td,
+.fame__table th {
+    padding: 10px;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+}
+
+.fame__table th:hover,
+.fame__table td:hover {
+    background-color: var(--secondary-background-color);
+}
+
+.fame__table tr > td:nth-last-of-type(1) {
+    text-align-last: left;
+    font-style: italic;
+}
+
+/* Media Queries */
+@media (max-width: 640px) {
+    .fame__table > thead th:nth-of-type(3),
+    .fame__table > thead th:nth-of-type(4),
+    .fame__table tr > td:nth-of-type(3),
+    .fame__table tr > td:nth-of-type(4) {
+        display: none;
+    }
+}
