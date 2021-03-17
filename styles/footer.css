@@ -1,10 +1,14 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
 :root {
     --primary-text-color: #f6b620;
     --secondary-text-color: #d4d4d4;
     --primary-background-color: #383838;
-    --border-radius: 10px;
+    --secondary-background-color: #515151;
+    --main-font-family: "Lato", sans-serif;
+    --radius: 10px;
+    --shadow: 0 0 10px 1px rgba(0, 0, 0, 0.75);
+    --transition: 0.3s linear;
 }
 
 .footer-table__container {
@@ -16,38 +20,40 @@
         "Allies Social Youtube Youtube";
 
     background-color: var(--primary-background-color);
-    font-family: "Lato", "Verdana", sans-serif;
+    font-family: var(--main-font-family);
 }
 
 /* Universal Elements */
 
-.footer-table__title,
+.footer-table__container .footer-table__title,
 .footer-table__link {
     margin-bottom: 0;
+    text-decoration: none;
     font-weight: bold;
     color: var(--primary-text-color);
     letter-spacing: 2px;
 }
 
-.footer-table__link:hover {
+.footer-table__container .footer-table__link:hover {
+    text-decoration: underline;
     filter: brightness(80%);
 }
 
-.footer-table__title {
-    font-weight: bold;
+.footer-table__container .footer-table__title {
+    font-size: 1.5rem;
     text-align: center;
-    font-weight: 600;
 }
 
-.footer-table__subtitle {
+.footer-table__container .footer-table__subtitle {
     color: var(--secondary-text-color);
     text-align: center;
 }
 
 .footer-table__image {
     border: 0;
-    border-radius: var(--border-radius);
+    border-radius: var(--radius);
     box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.75);
+    transition: var(--transition);
 }
 
 .footer-table__image:hover {
@@ -69,14 +75,19 @@
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, 1fr);
     justify-content: center;
-    gap: 5px 5px;
+    gap: 10px;
 }
 
 .forum-ranks__group-container {
     grid-column: span 2;
     text-align: center;
-    border-radius: var(--border-radius);
-    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.75);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+.forum-ranks__group-container:hover {
+    background-color: var(--secondary-background-color);
 }
 
 .forum-ranks__group-container:nth-last-child(1):nth-child(odd) {
@@ -118,12 +129,12 @@
 }
 
 .allies__single-button {
-    padding: 2px;
+    padding: 10px;
 }
 
 .allies__single-button img {
-    width: 100px;
-    height: 50px;
+    width: 150px;
+    height: 75px;
 }
 
 /* eGildia Wortal Section */
@@ -137,13 +148,16 @@
 }
 
 .wortal__banner {
-    border-radius: var(--border-radius);
+    border-radius: var(--radius);
 }
 
 .wortal__banner img {
-    box-shadow: none;
-    border-radius: 100%;
-    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.75);
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+.wortal__banner img:hover {
+    background-color: var(--secondary-background-color);
 }
 
 /* Social Section */
@@ -156,13 +170,14 @@
     align-items: center;
 }
 
-.social__element {
-    border-radius: var(--border-radius);
+.social__banner {
+    border-radius: var(--radius);
 }
 
-.social__element img {
+.social__banner img {
     box-shadow: none;
-    max-width: 300px;
+    width: 300px;
+    height: 300px;
 }
 
 /* Quotes Section */
@@ -186,9 +201,6 @@
     margin: 5px;
     width: 100px;
     height: 100px;
-}
-
-.users-quote__link {
 }
 
 .users-quote__text {
@@ -232,12 +244,6 @@
     color: var(--secondary-text-color);
 }
 
-.canal__link {
-}
-
-.canal__link img {
-}
-
 /* Media Queries */
 @media (max-width: 1024px) {
     .footer-table__container {
@@ -253,8 +259,10 @@
             "Social"
             "Youtube";
     }
+}
 
+@media (max-width: 640px) {
     .allies__button-list {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(1, 1fr);
     }
 }
