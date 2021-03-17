@@ -12,6 +12,8 @@ body {
     color: var(--secondary-text-color);
 }
 
+/* general elements */
+
 .throne-hall__container {
     font-family: var(--main-font-family);
 }
@@ -30,12 +32,6 @@ body {
     color: var(--primary-text-color);
 }
 
-.throne-hall__container .throne-hall__section-content {
-}
-
-.throne-hall__container .throne-hall__paragraph {
-}
-
 .throne-hall__container .throne-hall__paragraph--quote {
     font-style: italic;
 }
@@ -49,6 +45,8 @@ body {
 .throne-hall__invite .link a {
     color: var(--secondary-text-color);
 }
+
+/* strong inline elements */
 
 strong {
     font-weight: bold;
@@ -75,6 +73,8 @@ strong.link a:hover {
     filter: brightness(80%);
 }
 
+/* contact section */
+
 .throne-hall__contacts {
     display: flex;
     justify-content: space-around;
@@ -88,6 +88,8 @@ strong.link a:hover {
 .contacts__card span > img {
     width: 1rem;
 }
+
+/* graphics section */
 
 .graphics__graphic {
     display: flex;

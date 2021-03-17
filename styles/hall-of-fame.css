@@ -78,6 +78,7 @@ section.table {
 
 .fame__table thead {
     text-transform: uppercase;
+    font-weight: bold;
     color: var(--primary-text-color);
 }
 
@@ -86,6 +87,7 @@ section.table {
     padding: 10px;
     border-radius: var(--radius);
     box-shadow: var(--shadow);
+    transition: background-color 0.3s linear;
 }
 
 .fame__table th:hover,

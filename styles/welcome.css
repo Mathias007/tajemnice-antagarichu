@@ -1,39 +1,38 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 
 :root {
-    --special-color: #f6b620;
-    --standard-color: #d4d4d4;
+    --primary-text-color: #f6b620;
+    --secondary-text-color: #d4d4d4;
     --primary-background-color: #383838;
-    --border-radius: 5px
+    --main-font-family: "Shrikhand", cursive;
+    --radius: 10px;
+    --shadow: 0 0 10px 5px rgba(0, 0, 0, 0.75);
 }
 
 .welcome__wrapper {
-    background-color: var(--primary-background-color);
-    font-family: "Shrikhand", cursive;
-    text-align: center;
-    color: var(--standard-color);
-    letter-spacing: 2px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    font-family: var(--main-font-family);
+    text-align: center;
+    color: var(--secondary-text-color);
+    letter-spacing: 2px;
+    background-color: var(--primary-background-color);
 }
 
 .welcome__header {
-    color: var(--special-color);
+    color: var(--primary-text-color);
 }
 
 .welcome__advice {
     width: 50%;
     padding: 5px;
-    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.75);
-    border-radius: var(--border-radius);
-}
-
-.advice__text {
-
+    box-shadow: var(--shadow);
+    border-radius: var(--radius);
 }
 
 .advice__text span {
-    color: var(--special-color);
+    color: var(--primary-text-color);
 }

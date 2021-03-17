@@ -15,6 +15,8 @@ body {
     color: var(--secondary-text-color);
 }
 
+/* general elements */
+
 .prestige__container {
     font-family: var(--main-font-family);
 }
@@ -31,9 +33,6 @@ body {
     text-align: center;
     font-weight: bold;
     color: var(--primary-text-color);
-}
-
-.prestige__container .prestige__section-content {
 }
 
 .prestige__container .prestige__paragraph {
@@ -54,9 +53,7 @@ body {
     color: var(--secondary-text-color);
 }
 
-.throne-hall__invite .link a {
-    color: var(--secondary-text-color);
-}
+/* strong inline elements */
 
 strong {
     font-weight: bold;
@@ -91,6 +88,8 @@ strong.important {
     text-transform: uppercase;
 }
 
+/* forum ranks section */
+
 .prestige__ranks {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -122,6 +121,7 @@ strong.important {
 }
 
 /* Media Queries */
+
 @media (max-width: 1024px) {
     .prestige__ranks {
         display: grid;
