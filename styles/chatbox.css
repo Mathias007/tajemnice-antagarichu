@@ -57,8 +57,7 @@ div.block h2 span span[style="font-size:7px;vertical-align:super;"]:after {
 }
 
 /* info w chacie */
-.cb_info ul,
-li {
+.cb_info ul li {
     list-style: none;
 }
 .cb_info li.podmenu {
@@ -85,7 +84,7 @@ li {
     padding: 6px;
     box-shadow: 0 0 10px #000;
     border-radius: var(--border-radius);
-    font-size: .8rem;
+    font-size: 0.8rem;
     background: var(--light-background-color);
     color: var(--secondary-text-color);
 }

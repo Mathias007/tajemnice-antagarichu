@@ -40,6 +40,44 @@
 }
 
 /* strong inline elements */
+.rules__chapters-list,
+.rules__paragraphs-list,
+.rules__points-list {
+    list-style-type: none;
+}
+
+.rules__chapters-list li {
+    counter-increment: chaptersCounter;
+}
+
+.rules__chapters-list li::before {
+    content: counter(chaptersCounter, upper-roman) ".";
+    padding: 3px;
+    font-size: 1.1rem;
+    color: var(--primary-text-color);
+    font-weight: bold;
+}
+
+.rules__paragraphs-list li {
+    counter-increment: paragraphsCounter;
+}
+
+.rules__paragraphs-list li::before {
+    content: counter(paragraphsCounter) ")";
+    padding: 3px;
+    font-size: 1rem;
+    color: var(--secondary-text-color);
+    line-height: 1.6;
+}
+
+.rules__points-list li {
+    counter-increment: pointsCounter;
+}
+
+.rules__points-list li::before {
+    content: counter(pointsCounter, lower-alpha) ")";
+    padding: 3px;
+}
 
 strong {
     font-weight: bold;
