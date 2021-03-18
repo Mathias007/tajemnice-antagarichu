@@ -7,34 +7,39 @@
     --main-font-family: "Lato", sans-serif;
 }
 
+/* general elements */
+
 .rules__container {
     font-family: var(--main-font-family);
 }
 
-.rules__title {
+.rules__container .rules__title {
     text-align: center;
     font-weight: bold;
-}
-
-.rules__section {
+    color: var(--primary-text-color);
 }
 
 .rules__chapter {
-    color: var(--primary-text-color);
     font-weight: bold;
+    color: var(--primary-text-color);
+}
+
+.rules__footer {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+}
+
+.rules__signature,
+.rules__novelizations-info {
+    padding-top: 10px;
+}
+
+.rules__novelizations-info {
     font-style: italic;
 }
 
-.rules__paragraph {
-}
-
-ul {
-    list-style-type: none;
-}
-
-li {
-    margin-bottom: 5px;
-}
+/* strong inline elements */
 
 strong {
     font-weight: bold;
@@ -68,6 +73,6 @@ strong.link a:hover {
     filter: brightness(80%);
 }
 
-.rules__novelizations-info {
-    font-style: italic;
+strong.important {
+    text-transform: uppercase;
 }
