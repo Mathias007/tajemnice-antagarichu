@@ -12,6 +12,7 @@
     --primary-background-color: #383838;
     --radius: 5px;
     --shadow: 0 0 5px 15px rgba(0, 0, 0, 0.5);
+    --transition: all 0.3s linear;
 }
 
 .block,
@@ -26,9 +27,10 @@
     align-self: center;
     border-radius: 5px;
     box-shadow: var(--shadow);
+    transition: var(--transition);
 }
 
-#brdtitle:hover {
+#brdtitle img:hover {
     filter: brightness(80%);
 }
 
@@ -41,16 +43,17 @@
     font-size: 1.4rem;
 }
 
-#navindex a {
+#brdmenu a {
     border: 1px solid black;
     border-radius: var(--radius);
     padding: 10px;
+    line-height: 2.5;
     background: var(--primary-background-color);
     box-shadow: 0 0 5px 0 rgb(0 0 0 / 80%);
-    transition: 0.3s;
+    transition: var(--transition);
 }
 
-#navindex a:hover {
+#brdmenu a:hover {
     box-shadow: 0 0 5px 0 #f6b620;
 }
 
@@ -75,7 +78,7 @@
     text-align: center;
     font-weight: 700;
     cursor: pointer;
-    transition: 0.3s;
+    transition: var(--transition);
 }
 
 #announce > h2:hover,
@@ -93,6 +96,10 @@
 
 .blocktable thead {
     display: none;
+}
+
+.blocktable .tclcon {
+    margin-left: 0;
 }
 
 .blockform h2,
@@ -192,6 +199,10 @@ p span input[value="Preview"] {
     display: none;
 }
 
+input[name="npi"]:focus {
+    outline: none;
+}
+
 #punwrap input[type="submit"],
 #punwrap input[type="password"] {
     margin: 0 5px;
@@ -201,7 +212,7 @@ p span input[value="Preview"] {
     font-weight: 700;
     letter-spacing: 2px;
     cursor: pointer;
-    transition: 0.3s;
+    transition: var(--transition);
 }
 
 #punwrap input[type="submit"]:hover {

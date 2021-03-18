@@ -3,7 +3,7 @@
 :root {
     --primary-text-color: #f6b620;
     --secondary-text-color: #d4d4d4;
-    --primary-background-color: #383838;
+    --welcome-background-color: #383838;
     --main-font-family: "Shrikhand", cursive;
     --radius: 10px;
     --shadow: 0 0 10px 5px rgba(0, 0, 0, 0.75);
@@ -14,8 +14,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    font-family: var(--main-font-family);
+    font-family: var(--welcome-font-family);
     text-align: center;
     color: var(--secondary-text-color);
     letter-spacing: 2px;

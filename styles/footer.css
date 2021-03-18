@@ -40,11 +40,13 @@
 }
 
 .footer-table__container .footer-table__title {
+    padding-top: 10px;
     font-size: 1.5rem;
     text-align: center;
 }
 
 .footer-table__container .footer-table__subtitle {
+    padding: 10px;
     color: var(--secondary-text-color);
     text-align: center;
 }
