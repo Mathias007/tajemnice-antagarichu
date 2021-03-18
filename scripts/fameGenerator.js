@@ -128,7 +128,6 @@ function generateFameTable(data) {
 
         rowElement.innerHTML = `<td>${position}. (${positionChange})</td> <td><a href="${userProfilePath}${userID}">${username}</a></td> <td>${rank}</td> <td><a href="${userReputationPath}${userID}">${points} (${pointsChange})</a></td> <td>${quote}</td>`;
 
-        console.log(rowElement);
         tableBody.appendChild(rowElement);
     });
 }

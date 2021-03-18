@@ -80,7 +80,6 @@ let userQuote;
 
 const generateRandomUserQuote = () => {
     let index = Math.floor(Math.random() * users.length);
-    console.log(index);
 
     const { name, profileId, avatarFormat, quote } = users[index];
 
@@ -104,7 +103,7 @@ const generateRandomUserQuote = () => {
 
     userQuote = document.createElement("p");
     userQuote.classList.add("users-quote__text");
-    userQuote.textContent = users[index].quote;
+    userQuote.textContent = quote;
 
     quotesContainer.appendChild(userQuote);
 };

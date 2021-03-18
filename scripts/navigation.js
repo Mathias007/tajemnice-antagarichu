@@ -1,5 +1,4 @@
 ﻿const navigationElements = document.querySelectorAll("#brdmenu > ul > li");
-console.log(navigationElements);
 
 navigationElements.forEach((element) => {
     let link = element.querySelector("a");
