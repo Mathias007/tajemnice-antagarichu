@@ -16,8 +16,8 @@
 :root {
     --base-font-size: 16px;
     --line-height: 1.6;
-    --main-font-family: 'Lato', 'Verdana', sans-serif;
-    --secondary-font-family: 'Poppins', 'monaco', monospace;
+    --main-font-family: "Lato", "Verdana", sans-serif;
+    --secondary-font-family: "Poppins", "monaco", monospace;
     --primary-text-color: #f6b620;
     --secondary-text-color: #d4d4d4;
     --input-text-color: #d4d4d4;
@@ -91,11 +91,74 @@
     font-size: 1.2rem;
 }
 
-.block,
-.blocktable,
-.blockpost {
+/* Links */
+.conl li a,
+.conl dd a,
+.conr li a,
+.conr a,
+.conv li a {
+    text-decoration: none;
+}
+
+.tclcon li {
+    margin-left: 10%;
+    list-style-type: disc;
+}
+
+.tclcon a {
+    text-decoration: none;
+}
+
+/* Radius */
+
+#punwrap .blocktable,
+#punwrap .pun td,
+#punwrap .pun th,
+#punwrap .pun blockquote,
+#punwrap .codebox,
+#punwrap .forminfo,
+#punwrap .blockpost label,
+#punwrap .blockform,
+#punwrap .block2col,
+#postreview #brdstats,
+#brdfooter {
+    border-radius: var(--radius);
+}
+
+#punwrap .block2col .blockform,
+#punwrap .block2col .block {
+    border-radius: calc(var(--radius) / 2);
+}
+
+#punwrap .box,
+#punwrap .block,
+#punwrap .blockpost {
     border-radius: 0 0 var(--radius) var(--radius);
     box-shadow: var(--shadow);
+}
+
+#chatbox .inbox {
+    border-radius: 0;
+}
+
+/* Vertical spaces between board elements */
+
+#punwrap .blocktable,
+#punwrap .block,
+#punwrap .blockform,
+#punwrap .block2col,
+#postreview {
+    margin-bottom: 24px;
+}
+
+#punindex .blocktable,
+#punwrap .blockpost {
+    margin-bottom: 12px;
+}
+
+#punwrap .block2col .blockform,
+#punwrap .block2col .block {
+    margin-bottom: 0px;
 }
 
 #brdtitle img {
@@ -344,9 +407,13 @@ div#left div#stylowe25 {
     display: none;
 }
 
-/* #brdfooter .conr {
+.radius {
+    border-radius: var(--radius);
+}
+
+#brdfooter .conr {
     display: none;
-} */
+}
 
 /* Media Queries */
 

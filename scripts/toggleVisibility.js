@@ -32,7 +32,7 @@ createIcon = (header) => {
     header.appendChild(icon);
 };
 
-toggleCategoryVisibility = (index) => {
+toggleCategoryVisibility = (index, header) => {
     if (index === "announcement") {
         announcement.classList.toggle("hidden");
         toggleIcon(announcementHeader, "announcement");
@@ -40,10 +40,13 @@ toggleCategoryVisibility = (index) => {
         categories[index].classList.toggle("hidden");
         toggleIcon(categoryHeaders[index], index);
     }
+    header.classList.toggle("radius");
 };
 
 categoryHeaders.forEach((header, index) => {
-    header.addEventListener("click", () => toggleCategoryVisibility(index));
+    header.addEventListener("click", () =>
+        toggleCategoryVisibility(index, header)
+    );
     createIcon(header);
 });
 
