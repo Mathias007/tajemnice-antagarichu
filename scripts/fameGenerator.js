@@ -1,4 +1,4 @@
-const tableBody = document.getElementById("tableBody");
+﻿const tableBody = document.getElementById("tableBody");
 
 const bestUsers = [
     {

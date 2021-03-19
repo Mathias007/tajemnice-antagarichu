@@ -5,14 +5,90 @@
 /* Import icons custom styles */
 @import url("./icons.css");
 
+/****************************************************************/
+/* Import main Google Font (normal, italic, bold) */
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+/* Import Google Font for code texts (normal only) */
+@import url("https://fonts.googleapis.com/css2?family=Encode+Sans&family=Poppins&display=swap");
+
+/* Root variables using in the stylesheet */
 :root {
+    --base-font-size: 16px;
+    --line-height: 1.6;
+    --main-font-family: 'Lato', 'Verdana', sans-serif;
+    --secondary-font-family: 'Poppins', 'monaco', monospace;
     --primary-text-color: #f6b620;
+    --secondary-text-color: #d4d4d4;
     --input-text-color: #d4d4d4;
     --input-background-color: #2a2a2a;
     --primary-background-color: #383838;
-    --radius: 5px;
+    --radius: 10px;
     --shadow: 0 0 5px 15px rgba(0, 0, 0, 0.5);
     --transition: all 0.3s linear;
+}
+
+/* Default Font Group */
+
+#punwrap {
+    font-size: var(--base-font-size);
+}
+
+#punwrap .pun,
+#punwrap .pun input,
+#punwrap .pun select,
+#punwrap .pun textarea,
+#punwrap .pun optgroup {
+    font-family: var(--main-font-family);
+}
+
+#punwrap .pun {
+    font-size: 1rem;
+    line-height: var(--line-height);
+}
+
+#punwrap .pun table,
+#punwrap .pun input,
+#punwrap .pun select,
+#punwrap .pun optgroup,
+#punwrap .pun textarea,
+#punwrap div.postmsg p.postedit {
+    font-size: 1rem;
+}
+
+#punwrap .pun pre {
+    font-family: var(--secondary-font-family);
+}
+
+/* Font Sizes for headers */
+
+#punwrap #brdtitle h1 {
+    font-size: 1.4rem;
+}
+
+#punwrap .pun h2 {
+    font-size: 1.2rem;
+}
+
+#punwrap .pun h3 {
+    font-size: 1.1rem;
+}
+
+#punwrap .pun h4,
+#punwrap .pun h5 {
+    font-size: 1rem;
+}
+
+/* Larger text for particular items */
+
+#punwrap div.postmsg p {
+    line-height: var(--line-height);
+}
+#punwrap div.postleft dt {
+    font-size: 1.1rem;
+}
+#punwrap .pun pre {
+    font-size: 1.2rem;
 }
 
 .block,
@@ -267,6 +343,10 @@ div#left div#stylowe25 {
 .hidden {
     display: none;
 }
+
+/* #brdfooter .conr {
+    display: none;
+} */
 
 /* Media Queries */
 
