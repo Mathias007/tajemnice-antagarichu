@@ -30,8 +30,8 @@ Object.values(faviconData).forEach((linkData) => {
 
     const linkEl = document.createElement("link");
     linkEl.rel = linkData.rel;
-    linkEl.type = linkData.type;
-    linkEl.sizes = linkData.sizes;
+    if (linkData.type) linkEl.type = linkData.type;
+    if (linkData.sizes) linkEl.sizes = linkData.sizes;
     linkEl.href = `${proxyUrl}${path}${linkData.href}`;
 
     document.querySelector("head").appendChild(linkEl);

@@ -35,12 +35,15 @@ createIcon = (header) => {
 toggleCategoryVisibility = (index, header) => {
     if (index === "announcement") {
         announcement.classList.toggle("hidden");
+        announcementHeader.classList.toggle("radius");
+
         toggleIcon(announcementHeader, "announcement");
     } else {
         categories[index].classList.toggle("hidden");
+        header.classList.toggle("radius");
+
         toggleIcon(categoryHeaders[index], index);
     }
-    header.classList.toggle("radius");
 };
 
 categoryHeaders.forEach((header, index) => {

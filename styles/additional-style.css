@@ -92,6 +92,8 @@
 }
 
 /* Links */
+#announce a,
+#brdstats a,
 .conl li a,
 .conl dd a,
 .conr li a,
@@ -111,6 +113,8 @@
 
 /* Radius */
 
+#punwrap #brdheader .box,
+#punwrap #announce,
 #punwrap .blocktable,
 #punwrap .pun td,
 #punwrap .pun th,
@@ -120,8 +124,12 @@
 #punwrap .blockpost label,
 #punwrap .blockform,
 #punwrap .block2col,
-#postreview #brdstats,
-#brdfooter {
+#punwrap .block.pbbchatbox,
+#punwrap #postreview,
+#punwrap #brdstats .box,
+#punwrap #brdfooter .box,
+#punwrap .blockpost,
+#punwrap .block {
     border-radius: var(--radius);
 }
 
@@ -130,9 +138,13 @@
     border-radius: calc(var(--radius) / 2);
 }
 
+#punwrap .block h2,
+#punwrap .blockpost h2 {
+    border-radius: var(--radius) var(--radius) 0 0;
+}
+
 #punwrap .box,
-#punwrap .block,
-#punwrap .blockpost {
+#punwrap .block {
     border-radius: 0 0 var(--radius) var(--radius);
     box-shadow: var(--shadow);
 }
@@ -231,6 +243,7 @@
     justify-content: center;
     align-items: center;
     padding: 5px;
+    border-radius: var(--radius);
 }
 
 .blocktable thead {

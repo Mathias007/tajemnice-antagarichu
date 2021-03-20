@@ -4,7 +4,7 @@
     --primary-text-color: #f6b620;
     --secondary-text-color: #d4d4d4;
     --welcome-background-color: #383838;
-    --main-font-family: "Shrikhand", cursive;
+    --welcome-font-family: "Shrikhand", cursive;
     --radius: 10px;
     --shadow: 0 0 10px 5px rgba(0, 0, 0, 0.75);
 }
