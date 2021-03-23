@@ -11,6 +11,7 @@
 
 .rules__container {
     font-family: var(--main-font-family);
+    padding: 0 10vh;
 }
 
 .rules__container .rules__title {
@@ -46,14 +47,27 @@
     list-style-type: none;
 }
 
+.rules__chapters-list {
+    padding-left: 0;
+}
+
+.rules__chapters-list > li > h3 {
+    text-align: center;
+}
+
+.rules__paragraphs-list {
+    padding-left: 0;
+}
+
 .rules__chapters-list li {
     counter-increment: chaptersCounter;
 }
 
 .rules__chapters-list li::before {
-    content: counter(chaptersCounter, upper-roman) ".";
-    padding: 3px;
+    display: block;
+    content: "Część " counter(chaptersCounter, upper-roman) ".";
     font-size: 1.1rem;
+    text-align: center;
     color: var(--primary-text-color);
     font-weight: bold;
 }
@@ -63,11 +77,12 @@
 }
 
 .rules__paragraphs-list li::before {
-    content: counter(paragraphsCounter) ")";
-    padding: 3px;
+    display: block;
+    content: "§" counter(paragraphsCounter) ".";
     font-size: 1rem;
     color: var(--secondary-text-color);
     line-height: 1.6;
+    text-align: center;
 }
 
 .rules__points-list li {
@@ -75,6 +90,7 @@
 }
 
 .rules__points-list li::before {
+    display: inline;
     content: counter(pointsCounter, lower-alpha) ")";
     padding: 3px;
 }
